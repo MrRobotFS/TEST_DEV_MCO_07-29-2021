@@ -151,6 +151,7 @@
     <Compile Include="Models\Tb_PersonasFisicas.cs">
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModels\ListTb_PersonasFisicasViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

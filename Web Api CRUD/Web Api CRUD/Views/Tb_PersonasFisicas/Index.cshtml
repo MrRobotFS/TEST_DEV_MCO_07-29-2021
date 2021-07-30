@@ -1,7 +1,39 @@
-﻿
+﻿@model List<Web_Api_CRUD.Models.ViewModels.ListTb_PersonasFisicasViewModel>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Mis datos";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
+<div class="row">
+    <div class="col-lg-12">
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Fecha Registo</th>
+                <th>Fecha Actualizacion</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>RFC</th>
+                <th>Fecha Nacimiento</th>
+                <th>Usuario Agrega</th>
+                <th>Activo</th>
+            </tr>
+            @foreach(var element in Model){
+            <tr>
+                <td>@element.IdPersonaFisica </td>
+                <td>@element.FechaRegistro </td>
+                <td>@element.FechaActualizacion </td>
+                <td>@element.Nombre </td>
+                <td>@element.ApellidoPaterno </td>
+                <td>@element.ApellidoMaterno </td>
+                <td>@element.RFC </td>
+                <td>@element.FechaNacimiento </td>
+                <td>@element.UsuarioAgrega </td>
+                <td>@element.Activo </td>
+            </tr>
+            }
+        </table>
+    </div>
+</div>
