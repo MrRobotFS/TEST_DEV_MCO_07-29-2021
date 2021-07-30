@@ -152,6 +152,7 @@
       <DependentUpon>DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ViewModels\ListTb_PersonasFisicasViewModel.cs" />
+    <Compile Include="Models\ViewModels\Tb_PersonasFisicasViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +209,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Tb_PersonasFisicas\Index.cshtml" />
+    <Content Include="Views\Tb_PersonasFisicas\Nuevo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
