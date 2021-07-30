@@ -33,10 +33,10 @@ namespace Web_Api_CRUD.Models.ViewModels
         [DataType(DataType.Date)]
         [Display(Name = "Fecha de Nacimiento")]
         public DateTime FechaNacimiento { get; set; }
-        [Required]
+        //[Required]
         [StringLength(50)]
         [Display(Name = "Quien Agrega?")]
-        public int UsuarioAgrega { get; set; }
+        public string UsuarioAgrega { get; set; }
         [Required]
         [Display(Name = "Status")]
         public Boolean Activo { get; set; }

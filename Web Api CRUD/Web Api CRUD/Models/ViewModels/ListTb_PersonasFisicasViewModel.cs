@@ -17,7 +17,7 @@ namespace Web_Api_CRUD.Models.ViewModels
         public string ApellidoMaterno { get; set; }
         public string RFC { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        public int UsuarioAgrega { get; set; }
+        public string UsuarioAgrega { get; set; }
         public Boolean Activo { get; set; }
     }
 }

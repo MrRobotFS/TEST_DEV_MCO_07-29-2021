@@ -69,9 +69,10 @@ namespace Web_Api_CRUD.Controllers
                         db.SaveChanges();
                     }
 
+                    return Redirect("/");
                 }
 
-                return Redirect("Tb_PersonasFisicas/");
+                return View(model);
 
             }
             catch (Exception ex)

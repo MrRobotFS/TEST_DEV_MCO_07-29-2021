@@ -18,23 +18,46 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            @Html.LabelFor(d => d.IdPersonaFisica)
-            @Html.TextBoxFor(d => d.IdPersonaFisica, "", new { @class = "form-control" })
-            @Html.LabelFor(d => d.FechaRegistro)<br />
-            @Html.EditorFor(d => d.FechaRegistro, "", new { @class = "form-control" }) <br />
-            @Html.LabelFor(d => d.Nombre)
-            @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
-            @Html.LabelFor(d => d.ApellidoPaterno)
-            @Html.TextBoxFor(d => d.ApellidoPaterno, "", new { @class = "form-control" })
-            @Html.LabelFor(d => d.ApellidoMaterno)
-            @Html.TextBoxFor(d => d.ApellidoMaterno, "", new { @class = "form-control" })
-            @Html.LabelFor(d => d.RFC)
-            @Html.TextBoxFor(d => d.RFC, "", new { @class = "form-control" })
-            @Html.LabelFor(d => d.FechaNacimiento)<br />
-            @Html.EditorFor(d => d.FechaNacimiento, "", new { @class = "form-control" })<br />
-            @Html.LabelFor(d => d.UsuarioAgrega)
-            @Html.TextBoxFor(d => d.UsuarioAgrega, "", new { @class = "form-control" })
-        <br />
+            <div>
+                @Html.LabelFor(d => d.IdPersonaFisica)
+                @Html.TextBoxFor(d => d.IdPersonaFisica, "", new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.FechaRegistro, null, new { @class = "red" })
+                @Html.LabelFor(d => d.FechaRegistro)<br />
+                @Html.EditorFor(d => d.FechaRegistro, "", new { @class = "form-control" }) <br />
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.Nombre, null, new { @class = "red" })
+                @Html.LabelFor(d => d.Nombre)
+                @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.ApellidoPaterno, null, new { @class = "red" })
+                @Html.LabelFor(d => d.ApellidoPaterno)
+                @Html.TextBoxFor(d => d.ApellidoPaterno, "", new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.ApellidoMaterno, null, new { @class = "red" })
+                @Html.LabelFor(d => d.ApellidoMaterno)
+                @Html.TextBoxFor(d => d.ApellidoMaterno, "", new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.RFC, null, new { @class = "red" })
+                @Html.LabelFor(d => d.RFC)
+                @Html.TextBoxFor(d => d.RFC, "", new { @class = "form-control" })
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.FechaNacimiento, null, new { @class = "red" })
+                @Html.LabelFor(d => d.FechaNacimiento)<br />
+                @Html.EditorFor(d => d.FechaNacimiento, "", new { @class = "form-control" })<br />
+            </div>
+            <div>
+                @Html.ValidationMessageFor(d => d.UsuarioAgrega, null, new { @class = "red" })
+                @Html.LabelFor(d => d.UsuarioAgrega)
+                @Html.TextBoxFor(d => d.UsuarioAgrega, "", new { @class = "form-control" })
+            </div>
+            <br />
             <div style="display:flex; justify-content:flex-end;">
                 <input value="Guardar" class="btn btn-success" type="submit" />
             </div>
